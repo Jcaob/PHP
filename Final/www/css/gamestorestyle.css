@@ -1,0 +1,287 @@
+
+body {
+    text-align: center;
+    background-color: black;
+    padding-top: 30px;
+}
+
+
+div#wrapper {
+    text-align:left; /* reset text alignment */
+    width:980px; /* or a percentage, or whatever */
+    margin:0 auto; /* for the rest */
+}
+
+#curdate {
+    float:left;
+    margin-top: -20px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    /*background-color: #FF8E00;*/
+    background-color: lightskyblue;
+    padding: 5px 10px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+}
+
+#navbar img{
+    display: flex;
+    width: 30px;
+    height: 20px;
+    margin-right: -70px;
+}
+
+#navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar a:hover,
+#navbar a:active,
+#navbar a:focus
+{
+    color: #298ae2;
+}
+
+#banner {
+    background-color: #298ae2;
+    padding: 5px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    display: flex;
+}
+
+#banner img {
+    border: none;
+}
+
+#banner .logo {
+    width: 280px;
+}
+
+#banner .logo > img {
+    width: 200px;
+}
+
+#banner .banner-text {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#maintitle {
+    color: black;
+    font-size: 28pt;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+    margin-right: 150px;
+}
+
+#subtitle {
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 150px;
+}
+
+/* styles for the main content body */
+#mainbody {
+    padding: 10px;
+    background-color: white;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#mainbody h2{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+/*#mainbody p {*/
+/*display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    width: 550px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+#mainbody a {
+    /*text-decoration: underline;*/
+    color: black;
+}
+
+
+#mainbody a:hover,
+#mainbody a:active,
+#mainbody a:focus
+{
+    text-decoration: underline;
+    color: #298ae2;
+}
+
+#footer {
+    font-size: 80%;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    -moz-border-radius-bottomright: 15px;
+}
+
+/* styles of the game list table */
+.gamelist {
+    display: flex;
+    flex-direction: column;
+}
+.gamelist div {
+    padding: 3px 5px;
+}
+
+.gamelist .row {
+    display: flex;
+    align-items: center;
+}
+
+.gamelist .row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.gamelist .header {
+    background-color: #298ae2;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+}
+
+.gamelist .col1 {
+    width: 300px;
+}
+
+.gamelist .col2 {
+    width: 300px;
+}
+
+.gamelist .col3 {
+    width: 200px;
+}
+
+.gamelist .col4 {
+
+}
+
+/* styles of the game details table */
+.gamedetails {
+    display: flex;
+}
+
+.gamedetails img {
+    width: 150px;
+}
+.gamedetails .cover {
+    min-width: 200px;
+}
+
+.gamedetails .label div {
+    width: 100px;
+    font-weight: 600;
+    height: 32px;
+}
+
+.gamedetails .content div {
+    min-height: 32px;
+    width: 500px;
+}
+
+div.order-summary {
+    border: 1px solid #ccc;
+    width: 260px;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: -30px;
+    padding: 10px;
+    overflow: auto;
+}
+
+div.order-summary div{
+    padding: 3px;
+}
+
+div.order-summary span {
+    float: right;
+    margin-right: 5px
+}
+
+
+/*styles for action buttons */
+.gamestore-button {
+    border-top: 1px solid #CCCCCC;
+    margin: 50px auto 20px auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.gamestore-button input{
+    width: 75px;
+}
+
+.gamestore-button.delete-confirmed {
+    display: none;
+}
+
+.gamestore-button.delete-initial span,
+.gamestore-button.delete-confirmed span {
+    color: #9fc5e8;
+    font: 12px/18px Arial, Sans-serif;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+/* styles of the shopping card */
+#banner .shoppingcart {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#banner .shoppingcart  a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    /*background-color: #FF8E00;*/
+    background-color: lightskyblue;
+    width: 90px;
+    height: 70px;
+    padding: 10px;
+}
+
+span {
+    margin-top: -15px;
+}
+
